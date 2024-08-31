@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav" class="animate-slide-in-left">
+      <div class="logo">
+        Aanchal Nancy Jha
+        <div class="decor-line animate-slide-in-right"></div>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Experience</a></li>
+          <li><a href="#solo-projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">
+        Aanchal Nancy Jha
+        <div class="decor-line animate-slide-in-right"></div>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#solo-projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="threejs-canvas"></div>
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="section__pic-container animate-slide-in-left">
+        <img
+          src="./assets/profile-pic-modified.png"
+          alt="Aanchal Nancy Jha profile picture"
+        />
+      </div>
+      <div class="section__text animate-slide-in-right">
+        <p class="section__text__p1">Hello world, I'm</p>
+        <h1 class="title">Aanchal Nancy Jha</h1>
+        <div class="typing-container">
+          <p class="section__text__p2">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </p>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.alert('CV will be available soon.')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/aanchal-nancy-jha'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nancyaanchal'"
+          />
+          <img
+            src="./assets/youtube.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.youtube.com/@ANJSyntax'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container" id="about-pic">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ year <br />Fullstack Development</p>
+              <p>
+                2 months <br />
+                App Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                High school graduate <br />
+                [St. Xavier's School]
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a high school graduate and a passionate coding enthusiast.
+              Fullstack development, App development and Game development are my
+              field of interest. I enjoy learning new programming languages,
+              frameworks, and technologies. My hobbies include creating
+              mini-games and side projects, making coding tutorials on YouTube,
+              reading tech blogs, and competing in hackathons. I am always eager
+              to learn and take on new challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Hobies</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">My Hobies</h2>
+            <div class="hobby-container">
+              <hobby>
+                <img
+                  src="./assets/game.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Developing mini games</h3>
+                </div>
+              </hobby>
+              <hobby>
+                <img
+                  src="./assets/code1.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creating personal projects</h3>
+                </div>
+              </hobby>
+              <hobby>
+                <img
+                  src="./assets/read.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Reading tech contents</h3>
+                </div>
+              </hobby>
+              <hobby>
+                <img
+                  src="./assets/video.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Making coding tutorials on Youtube</h3>
+                </div>
+              </hobby>
+
+              <hobby>
+                <img
+                  src="./assets/code.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Learning new technologies</h3>
+                </div>
+              </hobby>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMMING LANGUAGES -->
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++/C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- FRAMEWORKS AND TECHS -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks and Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React Native</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pygame</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git/Github</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLO-PROJECTS -->
+    <section id="solo-projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Solo Projects</h1>
+      <div id="projects-wrapper" class="experience-details-container">
+        <div id="scroll-container" class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/chat-app.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Anonymous Chat App
+            </h2>
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>Django</i></b>
+
+              <li>Join rooms using room code</li>
+              <li>Message in real time</li>
+              <li>Chat anonymously</li>
+              <hr />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NancyAanchal/Anonymous-chat-app/tree/master'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/todo.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">To-DO List App</h2>
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>Django</i></b>
+
+              <li>User authentication</li>
+              <li>create/update/delete tasks</li>
+              <li>Search between tasks</li>
+              <hr />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NancyAanchal/To-Do-List'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ufo-shooter.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UFO Shooter Game</h2>
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>Pygame</i></b>
+
+              <li>Difficulty with progress</li>
+              <li>Periodic entries of Boss</li>
+              <li>Never ending game play</li>
+              <hr />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NancyAanchal/Modified-UFO-Shooter'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://nancyaanchal.itch.io/modified-ufo-shooter'"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tic-tac.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tic Tac Toe</h2>
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>React Native, Expo</i></b>
+
+              <li>Two player game</li>
+              <li>Can be played with a bot</li>
+              <li>3 difficulty levels</li>
+              <hr />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NancyAanchal/Tic-Tac-Toe-mobile-app'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://nancyaanchal.itch.io/tic-tac-toe'"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/digit-recog.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Digits recogniser
+            </h2>
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>Jupyter Notebook </i></b>
+
+              <li>Recognises handwritten digits</li>
+              <li>Image to text</li>
+              <li>Recognises 0-9 digits</li>
+              <hr />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NancyAanchal/Digits-recognizer/tree/master'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="scroll-left">
+          <img src="assets/left-arrow.png" alt="Left Arrow" />
+        </button>
+        <button class="scroll-right">
+          <img src="assets/right-arrow.png" alt="Right Arrow" />
+        </button>
+      </div>
+    </section>
+
+    <!-- COLLAB-PROJECTS -->
+    <section id="col-projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Collaborative Projects</h1>
+      <div id="projects-wrapper" class="experience-details-container">
+        <div id="scroll-container" class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/nepalingo.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Nepalingo</h2>
+
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>React</i></b>
+
+              <li>Learn languages of Nepal</li>
+              <li>Lots of learning tools</li>
+              <li>Tools to motivate users</li>
+              <hr />
+            </div>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/nepalcodes/nepalingo'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.nepalingo.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/career-ark.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CareerArk</h2>
+
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>React</i></b>
+
+              <li>Career counselling website</li>
+              <li>A lot of related features</li>
+              <li>Support personal couselling</li>
+              <hr />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NancyAanchal/CareerArk'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://main--careerark.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/discourse.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Discourse GPT</h2>
+
+            <div class="project-specs">
+              <hr />
+              <b> Made with : <i>Django, Vue</i></b>
+
+              <li>Intelligent chatbot</li>
+              <li>Texts and Speaks in Nepali</li>
+              <li>Works on custom data</li>
+              <hr />
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/60YoTm82cZ8?feature=shared'"
+              >
+                Intro video
+              </button>
+            </div>
+          </div>
+          <button class="scroll-left">
+            <img src="assets/left-arrow.png" alt="Left Arrow" />
+          </button>
+          <button class="scroll-right">
+            <img src="assets/right-arrow.png" alt="Right Arrow" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:nancyjha2006@gmail.com">nancyjha2006@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://linkedin.com/in/aanchal-nancy-jha">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Experience</a></li>
+            <li><a href="#solo-projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Aanchal Nancy Jha. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="sphere.js" type="module"></script> -->
+  </body>
+</html>
