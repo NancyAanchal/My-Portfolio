@@ -7,9 +7,21 @@
   padding: 0;
 }
 
+:root {
+  --gradient-background-start: rgb(108, 0, 162);
+  --gradient-background-end: rgb(0, 17, 82);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background: linear-gradient(
+    to bottom,
+    var(--gradient-background-start),
+    var(--gradient-background-end)
+  );
+
+  color: white;
 }
 
 html {
