@@ -36,12 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const textArray = [
-  "A Fullstack Developer",
-  "An emerging App Developer",
-  "A passionate Game Developer",
-  "An AI Enthusiast",
-];
+const textArray = ["A Fullstack Developer", "An emerging App Developer"];
 let currentTextIndex = 0;
 let currentCharIndex = 0;
 const typingSpeed = 85; // Time in ms between each character
